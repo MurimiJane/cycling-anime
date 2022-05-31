@@ -1,0 +1,310 @@
+.section1 {
+    position: relative;
+}
+
+
+
+.Group14 {
+    position: absolute;
+    top: 80px;
+    right: 40.4%;
+}
+
+.Group13 {
+    position: absolute;
+    top: 250px;
+    right: 37%;
+    z-index: 10;
+
+}
+
+.Wheel1 {
+    position: absolute;
+    top: 378px;
+    right: 55.5%;
+    z-index: 20;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+
+}
+
+.Wheel2 {
+    position: absolute;
+    top: 379px;
+    right: 32.9%;
+    z-index: 20;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+
+.rightarm {
+    position: absolute;
+    top: 237px;
+    right: 54.9%;
+}
+
+.leftarm {
+    position: absolute;
+    top: 245px;
+    right: 53%;
+    transform: rotate(-3deg);
+
+}
+
+.leftthigh {
+    position: absolute;
+    top: 230px;
+    right: 40.8%;
+    transform: rotate(175deg);
+    z-index: 20;
+}
+
+.lefttrouser {
+    position: absolute;
+    top: 270px;
+    transform: rotate(5deg);
+    right: 45.7%;
+    z-index: 20;
+    
+    
+}
+
+.leftleg {
+    position: absolute;
+    top: 320px;
+    right: 46.1%;
+    z-index: 10;
+    animation-name: leftleg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes leftleg {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+.rightleg {
+    position: absolute;
+    top: 291px;
+    right: 47.3%;
+    z-index: 5;
+    animation: cycle 1s linear infinite;
+    animation-delay: 5s;
+
+}
+
+.rightleg::before {
+    top: 293px;
+}
+
+.rightleg::after {
+    top: 240px;
+}
+
+@keyframes cycle {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+.trouser {
+    position: absolute;
+    top: 270px;
+    right: 47%;
+    z-index: 7;
+}
+
+.trouser ::after {
+    transform: rotate(20deg);
+}
+
+.trouser ::before {
+    top: 50px;
+}
+
+.Shoe1 {
+
+    position: absolute;
+    top: 438.5px;
+    right: 47.6%;
+    z-index: 20;
+    animation: rotate1 1s linear infinite;
+}
+
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.Shoe2 {
+    position: absolute;
+    top: 427px;
+    right: 49.3%;
+    z-index: 5;
+    animation: cycle 1s linear infinite;
+}
+
+
+.Shoe2 ::before {
+    top: 427px;
+}
+
+.Shoe2::after {
+    top: 422px;
+    right: 48.9%;
+}
+
+.pedal1 {
+    position: absolute;
+    top: 450px;
+    right: 49.3%;
+    animation: rotate2 1s linear infinite;
+
+}
+
+.pedal1:before {
+    top: 420px;
+    right: 49.3%;
+}
+
+.pedal1:after {
+    top: 450px;
+    right: 49.3%;
+}
+
+.pedal2 {
+    position: absolute;
+    top: 460px;
+    right: 47.3%;
+    z-index: 20;
+    animation: rotate2 1s linear infinite;
+
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+.road {
+    background-color: black;
+    width: 900px;
+    height: 7vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 499px;
+    right: 20%;
+    animation: moving 2s linear infinite;
+
+
+}
+
+@keyframes moving {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(0.9);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
